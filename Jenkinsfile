@@ -11,4 +11,14 @@ pipeline {
             }
         }
     }
+    
+    post {
+        success {
+            echo 'Build is Successfull'
+        }
+        
+        failure {
+            echo 'Build is Failed'
+        }
+    }
 }
